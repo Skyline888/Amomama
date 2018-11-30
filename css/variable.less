@@ -1,0 +1,51 @@
+@white: #ffffff;
+@black: #000000;
+@red: #af1b15;
+@backnumber: #ebebeb;
+@main-font: 'Roboto';
+@contenth2: #383838;
+
+// desktop large
+@desktop-large: 4096px;
+@desktop-large-area: 1160px;
+
+// desktop
+@desktop: 1024px;
+@desktop-area: 970px;
+
+//Tablet
+@tablet: 768px;
+@tablet-area: 730px;
+
+//mobile
+@mobile: 767px;
+@mobile-area: 100%;
+
+// mixin number
+.title-number(@number) {
+  position: relative;
+  text-align: left;
+  border-bottom: 2px solid @red;
+  font-size: 22px;
+  color: @black;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  margin-right: 140px;
+  span {
+    position: relative;
+    z-index: 2;
+    color: @red;
+    font-size: 36px;
+    font-style: italic;
+    margin-right: 20px;
+  }
+  &:before {
+    position: absolute;
+    top: 50%;
+    transform: translate(-20px, -50%);
+    content: @number;
+    font-size: 100px;
+    color: @backnumber;
+    z-index: 0;
+  }
+}

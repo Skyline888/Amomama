@@ -1,0 +1,121 @@
+
+@media (max-width: @mobile) {
+  .container {
+    width: @mobile-area - 10%;
+  }
+  .main {
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .main__title {
+    padding-top: 50px;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px black;
+  }
+  .description__text {
+    text-shadow: 1px 1px 2px black;
+  }
+  .main-social {
+    bottom: 15px;
+  }
+  .main-social__item {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+  }
+  .container__text {
+    padding-right: 0;
+  }
+  .main-content h2 {
+    font-size: 30px;
+    line-height: 35px;
+    margin: 10px 0;
+  }
+  .container__text p:last-child {
+    margin-bottom: 0;
+  }
+  .main-content__subtitle {
+    margin-right: 0 !important;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    &:before {
+      display: none;
+    }
+  }
+  .slider .slider__item img {
+    width: calc(~'100% - 20px') !important;
+    margin: 0 auto 20px !important;
+    display: block;
+    height: auto !important;
+  }
+  .slider__button-prev, .slider__button-next {
+    display: none !important;
+  }
+  .footer__area {
+    width: calc(~'100% - 10%');
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: @tablet) and (max-width: @desktop) {
+  .container {
+    width: @tablet-area;
+  }
+  .container--main-content {
+    width: @tablet-area - 30px;
+  }
+  .main {
+    height: 500px;
+  }
+  .main__title h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .main-content h2 {
+    font-size: 32px;
+  }
+  .main-content__subtitle {
+    font-size: 18px !important;
+    margin-right: 0 !important;
+  }
+  .slider .slider__item img {
+    width: 450px !important;
+    margin: auto !important;
+    display: block;
+  }
+  .slider__button-prev, .slider__button-next {
+    display: none !important;;
+  }
+  .footer__area {
+    width: calc(~'100% - 10%');
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .container {
+    width: @desktop-area;
+  }
+  .container--main-content {
+    width: @desktop-area - 30px;
+  }
+  .slider .container {
+    width: 768px;
+  }
+  .slider__button-prev {
+    left: -15%;
+  }
+  .slider__button-next {
+    right: -15%;
+  }
+}
+
+@media (min-width: @desktop-large) {
+  .container {
+    width: @desktop-large-area;
+  }
+}

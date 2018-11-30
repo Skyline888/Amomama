@@ -1,0 +1,33 @@
+.footer {
+  width: 100%;
+  padding: 45px 0 25px;
+  text-align: center;
+  background: @red;
+  &__area {
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto 70px;
+  }
+  &__video {
+    position: relative;
+    padding-bottom: 52.25%;
+    padding-top: 25px;
+    height: 0;
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__copyright {
+    text-align: center;
+    font-size: 14px;
+    color: @white;
+    span {
+      font-weight: 700;
+      font-size: 18px;
+    }
+  }
+}

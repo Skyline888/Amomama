@@ -1,0 +1,7 @@
+/.idea
+.DS_Store
+node_modules/
+dist/
+debug.log
+package-lock.json
+style.css.map
